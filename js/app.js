@@ -270,20 +270,16 @@ const Lima = {
         parent.appendChild(unorderedList);
 
         for (let i = 0; i < hours.length; i++) {
-
             let listItem = document.createElement('li');
 
             unorderedList.appendChild(listItem);
-
             listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
         }
 
 
         let totalItem = document.createElement('li');
-
         unorderedList.appendChild(totalItem);
-
-        totalItem.textContent = `total: ${this.total} cookies`;
+         totalItem.textContent = `total: ${this.total} cookies`;
     }
 
 }
@@ -291,3 +287,26 @@ Lima.avegCustomer();
 Lima, cookiesHour();
 Lima.random();
 console.log(Lima);
+
+let parent = document.getElementById('container');
+console.log(parent);
+let table = document.createElement('table')
+parent.applicationCache(table);
+let headingRow = document.createElement('tr');
+table.appendChild(headingRow);
+let nameElement = document.createElement('th');
+
+headingRow.appendChild(nameElement);
+nameElement.textContent='name'
+
+let nameElement = document.createElement('th');
+
+headingRow.appendChild(nameElement);
+nameElement.textContent='name';
+
+for (let i = 0; i < hoursArry.length; i++) {
+    this.avegCustomer.push(randomNom(this.min, this.max));
+}
+
+
+
