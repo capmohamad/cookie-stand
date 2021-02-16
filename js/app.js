@@ -26,7 +26,9 @@ const Seattle = {
     cookiesHour: function () {
         for (let i = 0; hoursArry.length; i++) {
             // console.log(this.avegCustomer[i]);
-            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies);
+            this.total+=this.cookiesHour[i]
+
         }
 
     },
@@ -80,6 +82,7 @@ const Tokyo = {
     avegCookies: 1.2,
     avegCustomer: [],
     cookiesHour: [],
+    total:0,
     avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
             this.avegCustomer.push(randomNom(this.min, this.max));
@@ -90,6 +93,8 @@ const Tokyo = {
         for (let i = 0; hoursArry.length; i++) {
             // console.log(this.avegCustomer[i]);
             this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+            this.total+=this.cookiesHour[i]
+
         }
 
     },
@@ -136,6 +141,8 @@ const Dubai = {
     avegCookies: 3.7,
     avegCustomer: [],
     cookiesHour: [],
+    total:0,
+
     avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
             this.avegCustomer.push(randomNom(this.min, this.max));
@@ -145,7 +152,9 @@ const Dubai = {
     cookiesHour: function () {
         for (let i = 0; hoursArry.length; i++) {
             // console.log(this.avegCustomer[i]);
-            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies);
+            this.total+=this.cookiesHour[i]
+
         }
 
     },
@@ -191,6 +200,7 @@ const Paris = {
     avegCookies: 2.3,
     avegCustomer: [],
     cookiesHour: [],
+    total:0,
     avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
             this.avegCustomer.push(randomNom(this.min, this.max));
@@ -200,7 +210,9 @@ const Paris = {
     cookiesHour: function () {
         for (let i = 0; hoursArry.length; i++) {
             // console.log(this.avegCustomer[i]);
-            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies);
+            this.total+=this.cookiesHour[i]
+
         }
 
     },
@@ -247,6 +259,8 @@ const Lima = {
     avegCookies: 4.6,
     avegCustomer: [],
     cookiesHour: [],
+    total:0,
+
     avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
             this.avegCustomer.push(randomNom(this.min, this.max));
@@ -256,7 +270,9 @@ const Lima = {
     cookiesHour: function () {
         for (let i = 0; hoursArry.length; i++) {
             // console.log(this.avegCustomer[i]);
-            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies);
+            this.total+=this.cookiesHour[i]
+
         }
 
     },
@@ -360,7 +376,6 @@ Shop.prototype.render = function () {
 
 let seattle = new Shop("Seattle", 23, 65, 6.3);
 seattle.getCookiesNo();
-// console.log(seattle);
 seattle.render();
 
 let tokyo = new Shop("Tokyo", 3, 24, 1.2);
