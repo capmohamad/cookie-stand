@@ -1,165 +1,293 @@
 'use strict';
 
-let randomNom = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
 let hoursArry = ["6am", "7am", "8am", "9am", "10am", "11am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
 
-let Seattle = {
+let randomNom = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
+
+const Seattle = {
+    locationsName: 'Seatel',
     min: 23,
     max: 65,
     avegCookies: 6.3,
-    avegCustomer: 0,
+    avegCustomer: [],
     cookiesHour: [],
-    gotcookiesNum: function () {
+    avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
-            this.avegCustomer = (randomNom((this.min), (this.max)));
+            this.avegCustomer.push(randomNom(this.min, this.max));
 
-            this.cookiesHour[i] = (this.avegCookies * this.avegCustomer);
-            console.log(this.cookiesHour);
         }
+    },
+    cookiesHour: function () {
+        for (let i = 0; hoursArry.length; i++) {
+            // console.log(this.avegCustomer[i]);
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+        }
+
+    },
+    rendar: function () {
+        let parent = document.getElementById('parent');
+        console.log(parent);
+        let underedList = document.createElement('ul');
+        parent.appendChild(underedList);
+        let shopNames = document.createElement('li');
+        underedList.appendChild(shopNames);
+        shopNames.textContent = this.locationsName;
+        let unorderedList = document.createElement('ul');
+        parent.appendChild(unorderedList);
+
+        for (let i = 0; i < hours.length; i++) {
+
+            let listItem = document.createElement('li');
+
+            unorderedList.appendChild(listItem);
+
+            listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
+        }
+
+
+        let totalItem = document.createElement('li');
+
+        unorderedList.appendChild(totalItem);
+
+        totalItem.textContent = `total: ${this.total} cookies`;
     }
+
 }
-Seattle.gotcookiesNum();
-// console.log(Seattle.getNomerofCustomer)
+Seattle.avegCustomer();
+Seattle, cookiesHour();
+Seattle.random();
+console.log(Seattle);
 
 
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "seattle stor";
-child.appendChild(underedList);
+// let parent = document.getElementById("Storslocation");
+// let child = document.createElement("ul");
+// parent.appendChild(child);
+// let underedList = document.createElement("li");
+// underedList.textContent = "seattle stor";
+// child.appendChild(underedList);
 
 
-let randomNom2 = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
-let hoursArry = ["6am", "7am", "8am", "9am", "10am", "11am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
-
-let Tokyo = {
+const Tokyo = {
+    locationsName: 'Tokyo',
     min: 3,
     max: 24,
     avegCookies: 1.2,
-    avegCustomer: 0,
+    avegCustomer: [],
     cookiesHour: [],
-    gotcookiesNum: function () {
+    avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
-            this.avegCustomer = (randomNom((this.min), (this.max)));
+            this.avegCustomer.push(randomNom(this.min, this.max));
 
-            this.cookiesHour[i] = (this.avegCookies * this.avegCustomer);
-            console.log(this.cookiesHour);
         }
+    },
+    cookiesHour: function () {
+        for (let i = 0; hoursArry.length; i++) {
+            // console.log(this.avegCustomer[i]);
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+        }
+
+    },
+    rendar: function () {
+        let parent = document.getElementById('parent');
+        console.log(parent);
+        let underedList = document.createElement('ul');
+        parent.appendChild(underedList);
+        let shopNames = document.createElement('li');
+        underedList.appendChild(shopNames);
+        shopNames.textContent = this.locationsName;
+        let unorderedList = document.createElement('ul');
+        parent.appendChild(unorderedList);
+
+        for (let i = 0; i < hours.length; i++) {
+
+            let listItem = document.createElement('li');
+
+            unorderedList.appendChild(listItem);
+
+            listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
+        }
+
+
+        let totalItem = document.createElement('li');
+
+        unorderedList.appendChild(totalItem);
+
+        totalItem.textContent = `total: ${this.total} cookies`;
     }
+
 }
-Tokyo.gotcookiesNum();
-
-
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "Tokyo stor";
-child.appendChild(underedList);
-
-
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "seattle stor";
-child.appendChild(underedList);
-
-
-let randomNom3 = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
+Tokyo.avegCustomer();
+Tokyo, cookiesHour();
+Tokyo.random();
+console.log(Tokyo);
 let hoursArry = ["6am", "7am", "8am", "9am", "10am", "11am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
 
-let Dubai = {
+const Dubai = {
+    locationsName: 'Dubai',
     min: 11,
     max: 38,
     avegCookies: 3.7,
-    avegCustomer: 0,
+    avegCustomer: [],
     cookiesHour: [],
-    gotcookiesNum: function () {
+    avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
-            this.avegCustomer = (randomNom((this.min), (this.max)));
+            this.avegCustomer.push(randomNom(this.min, this.max));
 
-            this.cookiesHour[i] = (this.avegCookies * this.avegCustomer);
-            console.log(this.cookiesHour);
         }
+    },
+    cookiesHour: function () {
+        for (let i = 0; hoursArry.length; i++) {
+            // console.log(this.avegCustomer[i]);
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+        }
+
+    },
+    rendar: function () {
+        let parent = document.getElementById('parent');
+        console.log(parent);
+        let underedList = document.createElement('ul');
+        parent.appendChild(underedList);
+        let shopNames = document.createElement('li');
+        underedList.appendChild(shopNames);
+        shopNames.textContent = this.locationsName;
+        let unorderedList = document.createElement('ul');
+        parent.appendChild(unorderedList);
+
+        for (let i = 0; i < hours.length; i++) {
+
+            let listItem = document.createElement('li');
+
+            unorderedList.appendChild(listItem);
+
+            listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
+        }
+
+
+        let totalItem = document.createElement('li');
+
+        unorderedList.appendChild(totalItem);
+
+        totalItem.textContent = `total: ${this.total} cookies`;
     }
+
 }
-Dubai.gotcookiesNum();
-
-
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "Dubai stor";
-child.appendChild(underedList);
-
-
-
-let randomNom4 = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
+Dubai.avegCustomer();
+Dubai, cookiesHour();
+Dubai.random();
+console.log(Dubai);
 let hoursArry = ["6am", "7am", "8am", "9am", "10am", "11am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
 
-let Paris = {
+const Paris = {
+    locationsName: 'Paris',
     min: 20,
-    max: 38,
+    max: 16,
     avegCookies: 2.3,
-    avegCustomer: 0,
+    avegCustomer: [],
     cookiesHour: [],
-    gotcookiesNum: function () {
+    avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
-            this.avegCustomer = (randomNom((this.min), (this.max)));
+            this.avegCustomer.push(randomNom(this.min, this.max));
 
-            this.cookiesHour[i] = (this.avegCookies * this.avegCustomer);
-            console.log(this.cookiesHour);
         }
+    },
+    cookiesHour: function () {
+        for (let i = 0; hoursArry.length; i++) {
+            // console.log(this.avegCustomer[i]);
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+        }
+
+    },
+    rendar: function () {
+        let parent = document.getElementById('parent');
+        console.log(parent);
+        let underedList = document.createElement('ul');
+        parent.appendChild(underedList);
+        let shopNames = document.createElement('li');
+        underedList.appendChild(shopNames);
+        shopNames.textContent = this.locationsName;
+        let unorderedList = document.createElement('ul');
+        parent.appendChild(unorderedList);
+
+        for (let i = 0; i < hours.length; i++) {
+
+            let listItem = document.createElement('li');
+
+            unorderedList.appendChild(listItem);
+
+            listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
+        }
+
+
+        let totalItem = document.createElement('li');
+
+        unorderedList.appendChild(totalItem);
+
+        totalItem.textContent = `total: ${this.total} cookies`;
     }
+
 }
-Paris.gotcookiesNum();
+Paris.avegCustomer();
+Paris, cookiesHour();
+Paris.random();
+console.log(Paris);
 
 
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "Paris stor";
-child.appendChild(underedList);
-
-
-let randomNom5 = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
 let hoursArry = ["6am", "7am", "8am", "9am", "10am", "11am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"]
 
-let Lima = {
+const Lima = {
+    locationsName: 'Lima',
     min: 2,
     max: 16,
     avegCookies: 4.6,
-    avegCustomer: 0,
+    avegCustomer: [],
     cookiesHour: [],
-    gotcookiesNum: function () {
+    avegCustomer: function () {
         for (let i = 0; i < hoursArry.length; i++) {
-            this.avegCustomer = (randomNom((this.min), (this.max)));
+            this.avegCustomer.push(randomNom(this.min, this.max));
 
-            this.cookiesHour[i] = (this.avegCookies * this.avegCustomer);
-            console.log(this.cookiesHour);
         }
+    },
+    cookiesHour: function () {
+        for (let i = 0; hoursArry.length; i++) {
+            // console.log(this.avegCustomer[i]);
+            this.cookiesHour.push(Math.floor.this.avegCustomer[i] * this.avegCookies)
+        }
+
+    },
+    rendar: function () {
+        let parent = document.getElementById('parent');
+        console.log(parent);
+        let underedList = document.createElement('ul');
+        parent.appendChild(underedList);
+        let shopNames = document.createElement('li');
+        underedList.appendChild(shopNames);
+        shopNames.textContent = this.locationsName;
+        let unorderedList = document.createElement('ul');
+        parent.appendChild(unorderedList);
+
+        for (let i = 0; i < hours.length; i++) {
+
+            let listItem = document.createElement('li');
+
+            unorderedList.appendChild(listItem);
+
+            listItem.textContent = `${hours[i]}: ${this.cookiesEachHour[i]} cookies`
+        }
+
+
+        let totalItem = document.createElement('li');
+
+        unorderedList.appendChild(totalItem);
+
+        totalItem.textContent = `total: ${this.total} cookies`;
     }
+
 }
-Lima.gotcookiesNum();
-
-
-let parent = document.getElementById("Storslocation");
-let child = document.createElement("ul");
-parent.appendChild(child);
-let underedList = document.createElement("li");
-underedList.textContent = "Lima stor";
-child.appendChild(underedList);
+Lima.avegCustomer();
+Lima, cookiesHour();
+Lima.random();
+console.log(Lima);
