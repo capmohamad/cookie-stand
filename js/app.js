@@ -36,7 +36,9 @@ const Seattle = {
         let parent = document.getElementById('parent');
         console.log(parent);
         let underedList = document.createElement('ul');
+
         parent.appendChild(underedList);
+
         let shopNames = document.createElement('li');
         underedList.appendChild(shopNames);
         shopNames.textContent = this.locationsName;
