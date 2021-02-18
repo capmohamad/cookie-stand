@@ -110,4 +110,37 @@ function renderTotal() {
     dataRaw.appendChild(totalHour1);
     totalHour1.textContent = (totalOfHours);
 }
-renderTotal();
+
+
+let storeForm = document.getElementById("storeForm");
+storeForm.addEventListener("submit", submitter);
+
+
+function submitter(event) {
+    event.preventDefault();
+    console.log(event);
+    let locationName = event.target.storeName.value;
+    console.log(locationName);
+    let min = event.target.min.value;
+    console.log(min);
+    let max = event.target.max.value;
+    console.log(max);
+    let avgCookies = event.target.avgCookies.value;
+    console.log(avgCookies);
+
+    let addedStore = new Shop(locationName, min, max, avgCookies);
+    console.log(addedStore);
+    addedStore.getCookiesNo();
+    addedStore.render();
+
+    let container = document.getElementById("tableContent");
+    container.textContent = "";
+    hourHeading();
+
+    for (let i = 0; i < shops.length; i++) {
+        shops[i].getCookiesNo();
+        shops[i].render();
+    }
+    renderTotal();
+}
+renderTable();
