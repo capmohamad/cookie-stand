@@ -32,11 +32,13 @@ const Seattle = {
         }
 
     },
-    rendar: function () {
+    render: function () {
         let parent = document.getElementById('parent');
         console.log(parent);
         let underedList = document.createElement('ul');
-        parent.appendChild(underedList);
+
+        parent.appendChild(underedList)
+
         let shopNames = document.createElement('li');
         underedList.appendChild(shopNames);
         shopNames.textContent = this.locationsName;
@@ -63,7 +65,7 @@ const Seattle = {
 }
 Seattle.avegCustomerinhr();
 Seattle.cookiesinHour();
-Seattle.rendar();
+Seattle.render();
 console.log(Seattle);
 
 
