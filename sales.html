@@ -1,45 +1,51 @@
   
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmon Cookies</title>
-    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
-<link rel="public-facing" href="./pages/index.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
-
 <body>
-    <div id="StoresLocations">
-        
+    <header>
+        <h1>Salmon Cookie Stand caffe </h1>
+        <h3>The Original coffe mail</h3>
+        <nav>
+            <ul class=nav2>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="">contact Us</a></li> -->
+            </ul>
+        </nav>
+        <div class = logo>
+            <img src="images/chinook.jpg" alt="logo">
+        </div>
+    </header>
+    <main>
+        <h2></h2>
+        <div id="salmon-cookies">
+        </div>
+        <div class="container">
+        <form id="location-form">
+            <fieldset>
+                <legend>Add new Location :</legend>
+                <label for="name">location name</label>
+                <input type="text" id="name" placeholder="Enter location name">
+                <label for="minCustomersHour">min customer per hour</label>
+                <input type="number" id="minCustomersHour" placeholder="Enter the min. customer per hour">
+                <label for="maxCustomersHour">max customer per hour</label>
+                <input type="number" id="maxCustomersHour" placeholder="Enter the max. customer per hour">
+                <label for="avgCookiesDay">avg number of cookies per day</label>
+                <input type="number" step="0.01" id="avgCookiesDay" placeholder="Enter the avg. number of cookies per day">
+                <input type="submit">
+            </fieldset>
+      </form>
     </div>
-    <br>
-        <br>
-        <br>
-    <form action="" id="storeForm">
-        <fieldset>
-            <label for="storeName">Our store Name</label><br>
-            <input type="text" id="storeName" name="storeName" placeholder="storeName" autocomplete="off">
-            <br>
-            <br>
-
-            <label for="min">Minimum number Of Customers</label><br>
-            <input type="text" name="min" id="min" placeholder="min">
-            <br>
-            <br>
-            <label for="max">Maximum number Of Customers</label><br>
-            <input type="text" name="max" id="max" placeholder="max">
-            <br>
-            <br>
-            <label for="avgCookies">Average number Of Cookies</label><br>
-            <input type="text" name="avgCookies" id="avgCookies" placeholder="avgCookies">
-            <br>
-            <br>
-            <br>
-            <input type="submit" value="Add Store">
-        </fieldset>
-        
-    </form>
-    <script src="./js/app.js"></script>
+    </main>
+    <footer>
+        <p>Copy rights @2021</p>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
-
 </html>

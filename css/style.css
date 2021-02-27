@@ -1,118 +1,195 @@
-*
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+  margin: auto;
  
-{
-    font-family: Arial, sans-serif;
-  }
-  
-  table {
-    border: solid black 1px;
-  }
-  th {
-    border: solid black 1px;
-  }
-  
-  td{
-    border: solid black 1px;
-  }
-    
-*{
-  box-sizing: border-box;
 }
 
-body{
+td {
+  height: 25px;
+  vertical-align: bottom;
+  border: 1px solid black;
   font-family: Arial;
-  padding: 10px;
-  background-color: #f1f1f1;
+  color: rgb(109, 80, 34); ;
+}
+th {
+  height: 40px;
+  vertical-align: bottom;
+  border: 1px solid black;
+  font-weight: bold;
+  background-color:  #efe6d8;
+}
+ul {
+  background-color: #efe6d8;
+  display: inline-block;
+}
+
+h1 {
+  color: rgba(224, 138, 31, 0.84);
+  float: right;
+  clear: right;
+  padding: 15px 40px;
+  font-size: 1cm;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: fantasy;
+  display: inline;
+
+}
+h3 {
+  float: right;
+  clear: right;
+  display: inline;
+  font-size: 18px;
+  font-family: monospace;
+  padding: 0 120px 10px 0;
 }
 
 header{
-  padding: 10px;
-  background-color: rgb(122, 121, 121);
-  margin: 10px;
-  position: relative;
+  border-style: solid;
+  border-color: rgb(126, 94, 42);
+  border-width: 1px;
+  background-color: rgb(254, 254, 254);
+  position: sticky;
+  top: 0px;
+  height: 125px;
 }
-
-#headerplaceholder{
-  width: 15%; 
-  position: absolute;
-  margin-left: 250px;
-  margin-top: 5px;
-}
-
-nav{
-  margin-left: 450px;
-}
-
-nav ul{
-   margin-left: 10px;
-}
-
-nav ul li{
-  display: inline-block;
-  padding: 20px;
-  margin: 10px;
+div img {
+  width: 319px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 61px; 
 }
 
 nav ul li a{
-  color: #f2f2f2;
+  font-family: sans-serif;
   text-decoration: none;
+  color: rgb(126, 94, 42);
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+nav ul li a:hover{
+  color: rgb(211, 214, 20);
+}
+ul.nav1 {
+  list-style: none;
+  float: right;
+  clear: right;
+  padding: 0px 44px 20px 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+ul.nav2 {
+  list-style: none;
+  float: right;
+  clear: right;
+  padding: 0px 151px 20px 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+nav ul li{
+  display: inline;
+  padding: 5px 20px ;
+  float: right;
+}
+h2{ 
+  font-family: Yellowtail;
+  text-indent: 30px;
+  font-size: 27px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  padding: 22px 0px;
+  margin-top: 5px;
+  color:  rgb(114, 85, 38);
+}
+body {
+      
+  background-color:rgb(243, 240, 235);
+      
+  }
+.family {
+
   text-align: center;
-}
-section{
-  position: relative;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-#placeholderfirstchild{
   width: 100%;
+  margin-top: 22px;
+}
+
+p.text{
+  font-family:  Georgia;
+  font-size: 14px;
+  margin: 0 39px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+.textbox {
+  margin: 17px 15px;
+  background: rgba(241, 228, 212, 0.84);
+  padding: 19px 17px;
+  width: 14%;
+  height: 180px;
+  line-height: 30px;
+  font-family:  Georgia;
+  font-size: 16px;
+  float: left;
+
+}
+
+
+iframe {
+  width: 50%;
+  height: 15cm;
+  margin: 0 25% 0 25%;
+}
+footer p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   padding: 20px;
 }
 
-.placeholder{
-  width: 30%;
-  margin: 10px;
-  margin-left: 25px;
+footer {
+  background-color: rgb(254, 254, 254);
+  height: 70px;
+  border-style: solid;
+  border-color: rgb(126, 94, 42);
+  border-width: 1px;
 }
-#bottom{
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-#placeholder400{
-  margin: 10px;
-  width: 50%;
-}
-#text{
-  /* font-weight: bold; */
-  text-align: justify;
-  /* overflow:scroll; */
-  width: 45%;
-  height: 340px;
-  float: right;
-  margin-right: 30px;
-  margin-top: 30px;
-  padding: 50px;
-}
-#text h3{
-  font-weight: bold;
-}
-#checksales{
-  color: rgb(255, 255, 255);
-  float: right;
-  margin-top: -30px;
-  margin-right: 450px;
-  padding: 10px;
-  background-color: black;
 
+input[type=text], select, textarea {
+width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box; 
+margin-top: 6px; 
+margin-bottom: 16px; 
+resize: vertical
 }
-#checksales a{
-  color: #f2f2f2;
-  text-decoration: none;
-  text-align: center;
+
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
-  footer{
-  width: 100%;
-  background-color: #333;
-  padding: 70px;
+
+input[type=submit]:hover {
+background-color: #367a3a;
+}
+
+.container{
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
 }
